@@ -1,0 +1,22 @@
+2019-02-23 18:52:06.651 INFO  [main] com.fw.tester.App [logStarting]:50 - Starting App on DESKTOP-JB6DDF5 with PID 9484 (C:\workspace\chanel\fw-tester\target\classes started by jingt in C:\workspace\chanel\fw-tester)
+2019-02-23 18:52:06.656 INFO  [main] com.fw.tester.App [logStartupProfileInfo]:659 - No active profile set, falling back to default profiles: default
+2019-02-23 18:52:07.940 INFO  [main] org.eclipse.jetty.util.log [initialized]:193 - Logging initialized @2974ms to org.eclipse.jetty.util.log.Slf4jLog
+2019-02-23 18:52:08.048 INFO  [main] o.eclipse.jetty.server.Server [doStart]:374 - jetty-9.4.10.v20180503; built: 2018-05-03T15:56:21.710Z; git: daa59876e6f384329b122929e70a80934569428c; jvm 1.8.0_171-b11
+2019-02-23 18:52:08.152 INFO  [main] o.eclipse.jetty.server.session [doStart]:365 - DefaultSessionIdManager workerName=node0
+2019-02-23 18:52:08.152 INFO  [main] o.eclipse.jetty.server.session [doStart]:370 - No SessionScavenger set, using defaults
+2019-02-23 18:52:08.153 INFO  [main] o.eclipse.jetty.server.session [startScavenging]:149 - node0 Scavenging every 600000ms
+2019-02-23 18:52:08.158 INFO  [main] o.e.j.s.h.C.application [log]:2221 - Initializing Spring embedded WebApplicationContext
+2019-02-23 18:52:08.267 INFO  [main] o.e.j.s.handler.ContextHandler [doStart]:788 - Started o.s.b.w.e.j.JettyEmbeddedWebAppContext@4e31c3ec{/,[file:///C:/Users/jingt/AppData/Local/Temp/jetty-docbase.371037687442129184.8089/, jar:file:/C:/software/repo/io/springfox/springfox-swagger-ui/2.7.0/springfox-swagger-ui-2.7.0.jar!/META-INF/resources],AVAILABLE}
+2019-02-23 18:52:08.267 INFO  [main] o.eclipse.jetty.server.Server [doStart]:411 - Started @3301ms
+2019-02-23 18:52:08.807 INFO  [main] s.d.s.w.PropertySourcedRequestMappingHandlerMapping [initHandlerMethods]:69 - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-02-23 18:52:09.271 INFO  [main] s.d.s.w.p.DocumentationPluginsBootstrapper [start]:147 - Context refreshed
+2019-02-23 18:52:09.286 INFO  [main] s.d.s.w.p.DocumentationPluginsBootstrapper [start]:150 - Found 1 custom documentation plugin(s)
+2019-02-23 18:52:09.318 INFO  [main] s.d.s.w.s.ApiListingReferenceScanner [scan]:41 - Scanning for api listing references
+2019-02-23 18:52:09.518 INFO  [main] s.d.s.w.r.o.CachingOperationNameGenerator [startingWith]:40 - Generating unique operation named: getBookUsingGET_1
+2019-02-23 18:52:09.537 INFO  [main] o.e.j.s.h.C.application [log]:2221 - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-02-23 18:52:09.572 INFO  [main] o.e.j.server.AbstractConnector [doStart]:289 - Started ServerConnector@49d30c6f{HTTP/1.1,[http/1.1]}{0.0.0.0:8089}
+2019-02-23 18:52:09.579 INFO  [main] com.fw.tester.App [logStarted]:59 - Started App in 3.35 seconds (JVM running for 4.613)
+2019-02-23 18:54:22.211 INFO  [RMI TCP Connection(10)-127.0.0.1] o.e.j.server.AbstractConnector [doStop]:332 - Stopped ServerConnector@49d30c6f{HTTP/1.1,[http/1.1]}{0.0.0.0:8089}
+2019-02-23 18:54:22.211 INFO  [RMI TCP Connection(10)-127.0.0.1] o.eclipse.jetty.server.session [stopScavenging]:167 - node0 Stopped scavenging
+2019-02-23 18:54:22.213 INFO  [RMI TCP Connection(10)-127.0.0.1] o.e.j.s.h.C.application [log]:2221 - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2019-02-23 18:54:22.214 INFO  [RMI TCP Connection(10)-127.0.0.1] o.e.j.s.handler.ContextHandler [doStop]:957 - Stopped o.s.b.w.e.j.JettyEmbeddedWebAppContext@4e31c3ec{/,[file:///C:/Users/jingt/AppData/Local/Temp/jetty-docbase.371037687442129184.8089/, jar:file:/C:/software/repo/io/springfox/springfox-swagger-ui/2.7.0/springfox-swagger-ui-2.7.0.jar!/META-INF/resources],UNAVAILABLE}
