@@ -70,10 +70,6 @@ public class WebLogAspect {
             	e.printStackTrace();
             }
         }
-        
-        //Service degradation
-        //测下来不需要服务降级，send一定会成功
-
     }
 
  
@@ -83,7 +79,7 @@ public class WebLogAspect {
     	HttpServletResponse response = ((ServletRequestAttributes) RequestContextHolder.getRequestAttributes()).getResponse();
     	LogResponse logResponse = new LogResponse(startTime.get(), response.getStatus(), ret, System.currentTimeMillis() - startTime.get());
     	log.info(JSON.toJSONString(logResponse));
-    	 if(kafkaEnable) {
+    	if(kafkaEnable) {
          	try {
              	kafkaTemplate.send("httplog",  JSON.toJSONString(logResponse));
                  log.info("Send message to kafka successfully");
@@ -98,6 +94,15 @@ public class WebLogAspect {
     public void doThrowing(Throwable ex){
     	LogResponse logResponse = new LogResponse(startTime.get(), HttpStatus.INTERNAL_SERVER_ERROR.value(), ex.getMessage(), System.currentTimeMillis() - startTime.get());
     	log.info(JSON.toJSONString(logResponse));
+    	if(kafkaEnable) {
+         	try {
+             	kafkaTemplate.send("httplog",  JSON.toJSONString(logResponse));
+                 log.info("Send message to kafka successfully");
+             } catch (Exception e) {
+             	log.error("Send message to kafka unsuccessfully", e);
+             	e.printStackTrace();
+             }
+         }
     }
     
     
