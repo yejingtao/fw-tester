@@ -1,0 +1,313 @@
+2019-03-03 00:42:48.222 INFO  [main] com.fw.tester.App [logStarting]:50 - Starting App on DESKTOP-JB6DDF5 with PID 12820 (C:\workspace\chanel\fw-tester\target\classes started by jingt in C:\workspace\chanel\fw-tester)
+2019-03-03 00:42:48.225 INFO  [main] com.fw.tester.App [logStartupProfileInfo]:659 - No active profile set, falling back to default profiles: default
+2019-03-03 00:42:49.432 INFO  [main] org.eclipse.jetty.util.log [initialized]:193 - Logging initialized @3043ms to org.eclipse.jetty.util.log.Slf4jLog
+2019-03-03 00:42:49.540 INFO  [main] o.eclipse.jetty.server.Server [doStart]:374 - jetty-9.4.10.v20180503; built: 2018-05-03T15:56:21.710Z; git: daa59876e6f384329b122929e70a80934569428c; jvm 1.8.0_171-b11
+2019-03-03 00:42:49.630 INFO  [main] o.eclipse.jetty.server.session [doStart]:365 - DefaultSessionIdManager workerName=node0
+2019-03-03 00:42:49.631 INFO  [main] o.eclipse.jetty.server.session [doStart]:370 - No SessionScavenger set, using defaults
+2019-03-03 00:42:49.632 INFO  [main] o.eclipse.jetty.server.session [startScavenging]:149 - node0 Scavenging every 600000ms
+2019-03-03 00:42:49.637 INFO  [main] o.e.j.s.h.C.application [log]:2221 - Initializing Spring embedded WebApplicationContext
+2019-03-03 00:42:49.752 INFO  [main] o.e.j.s.handler.ContextHandler [doStart]:788 - Started o.s.b.w.e.j.JettyEmbeddedWebAppContext@128c502c{/,[file:///C:/Users/jingt/AppData/Local/Temp/jetty-docbase.9197811005300330301.8089/, jar:file:/C:/software/repo/io/springfox/springfox-swagger-ui/2.7.0/springfox-swagger-ui-2.7.0.jar!/META-INF/resources],AVAILABLE}
+2019-03-03 00:42:49.752 INFO  [main] o.eclipse.jetty.server.Server [doStart]:411 - Started @3364ms
+2019-03-03 00:42:50.316 INFO  [main] s.d.s.w.PropertySourcedRequestMappingHandlerMapping [initHandlerMethods]:69 - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-03-03 00:42:50.936 INFO  [main] s.d.s.w.p.DocumentationPluginsBootstrapper [start]:147 - Context refreshed
+2019-03-03 00:42:50.952 INFO  [main] s.d.s.w.p.DocumentationPluginsBootstrapper [start]:150 - Found 1 custom documentation plugin(s)
+2019-03-03 00:42:50.980 INFO  [main] s.d.s.w.s.ApiListingReferenceScanner [scan]:41 - Scanning for api listing references
+2019-03-03 00:42:51.088 INFO  [main] s.d.s.w.r.o.CachingOperationNameGenerator [startingWith]:40 - Generating unique operation named: getBookUsingGET_1
+2019-03-03 00:42:51.107 INFO  [main] o.e.j.s.h.C.application [log]:2221 - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-03-03 00:42:51.147 INFO  [main] o.e.j.server.AbstractConnector [doStart]:289 - Started ServerConnector@3eb292cd{HTTP/1.1,[http/1.1]}{0.0.0.0:8089}
+2019-03-03 00:42:51.154 INFO  [main] com.fw.tester.App [logStarted]:59 - Started App in 3.314 seconds (JVM running for 4.764)
+2019-03-03 00:43:20.287 INFO  [qtp1640458320-21] c.f.t.aspect.WebLogJsonAspect [doBefore]:62 - {"args":"[{\"author\":\"88888\",\"id\":0,\"name\":\"中文8\",\"price\":0.0,\"time\":1551514679813,\"version\":\"string\"}]","classMethod":"com.fw.tester.controller.BookController.createBook","httpMethod":"POST","traceId":1551545000219,"url":"http://localhost:8089/book"}
+2019-03-03 00:43:20.287 INFO  [qtp1640458320-28] c.f.t.aspect.WebLogJsonAspect [doBefore]:62 - {"args":"[{\"author\":\"88888\",\"id\":0,\"name\":\"中文8\",\"price\":0.0,\"time\":1551514679813,\"version\":\"string\"}]","classMethod":"com.fw.tester.controller.BookController.createBook","httpMethod":"POST","traceId":1551545000206,"url":"http://localhost:8089/book"}
+2019-03-03 00:43:20.287 INFO  [qtp1640458320-21] c.f.t.aspect.WebLogJsonAspect [doBefore]:62 - {"args":"[{\"author\":\"88888\",\"id\":0,\"name\":\"中文8\",\"price\":0.0,\"time\":1551514679813,\"version\":\"string\"}]","classMethod":"com.fw.tester.controller.BookController.createBook","httpMethod":"POST","traceId":1551545000219,"url":"http://localhost:8089/book"}
+2019-03-03 00:43:20.287 INFO  [qtp1640458320-28] c.f.t.aspect.WebLogJsonAspect [doBefore]:62 - {"args":"[{\"author\":\"88888\",\"id\":0,\"name\":\"中文8\",\"price\":0.0,\"time\":1551514679813,\"version\":\"string\"}]","classMethod":"com.fw.tester.controller.BookController.createBook","httpMethod":"POST","traceId":1551545000206,"url":"http://localhost:8089/book"}
+2019-03-03 00:43:20.304 INFO  [qtp1640458320-21] o.a.k.c.p.ProducerConfig [logAll]:238 - ProducerConfig values: 
+	acks = 1
+	batch.size = 4096
+	bootstrap.servers = [10.100.129.142:9092]
+	buffer.memory = 40960
+	client.id = 
+	compression.type = none
+	connections.max.idle.ms = 540000
+	enable.idempotence = false
+	interceptor.classes = null
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 0
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+2019-03-03 00:43:20.345 INFO  [qtp1640458320-21] o.a.k.c.utils.AppInfoParser [<init>]:109 - Kafka version : 1.0.1
+2019-03-03 00:43:20.346 INFO  [qtp1640458320-21] o.a.k.c.utils.AppInfoParser [<init>]:110 - Kafka commitId : c0518aa65f25317e
+2019-03-03 00:43:20.502 INFO  [qtp1640458320-23] c.f.t.aspect.WebLogJsonAspect [doBefore]:62 - {"args":"[{\"author\":\"88888\",\"id\":0,\"name\":\"中文8\",\"price\":0.0,\"time\":1551514679813,\"version\":\"string\"}]","classMethod":"com.fw.tester.controller.BookController.createBook","httpMethod":"POST","traceId":1551545000502,"url":"http://localhost:8089/book"}
+2019-03-03 00:43:20.502 INFO  [qtp1640458320-23] c.f.t.aspect.WebLogJsonAspect [doBefore]:62 - {"args":"[{\"author\":\"88888\",\"id\":0,\"name\":\"中文8\",\"price\":0.0,\"time\":1551514679813,\"version\":\"string\"}]","classMethod":"com.fw.tester.controller.BookController.createBook","httpMethod":"POST","traceId":1551545000502,"url":"http://localhost:8089/book"}
+2019-03-03 00:43:20.642 INFO  [qtp1640458320-21] c.f.t.aspect.WebLogJsonAspect [doBefore]:67 - Send message to kafka successfully
+2019-03-03 00:43:20.642 INFO  [qtp1640458320-23] c.f.t.aspect.WebLogJsonAspect [doBefore]:67 - Send message to kafka successfully
+2019-03-03 00:43:20.642 INFO  [qtp1640458320-28] c.f.t.aspect.WebLogJsonAspect [doBefore]:67 - Send message to kafka successfully
+2019-03-03 00:43:20.642 INFO  [qtp1640458320-21] c.f.t.aspect.WebLogJsonAspect [doBefore]:67 - Send message to kafka successfully
+2019-03-03 00:43:20.642 INFO  [qtp1640458320-23] c.f.t.aspect.WebLogJsonAspect [doBefore]:67 - Send message to kafka successfully
+2019-03-03 00:43:20.642 INFO  [qtp1640458320-28] c.f.t.aspect.WebLogJsonAspect [doBefore]:67 - Send message to kafka successfully
+2019-03-03 00:43:20.649 INFO  [qtp1640458320-28] c.f.t.aspect.WebLogJsonAspect [doAfterReturning]:81 - {"response":{"result":"result is:2"},"spendTime":441,"status":200,"traceId":1551545000205}
+2019-03-03 00:43:20.649 INFO  [qtp1640458320-23] c.f.t.aspect.WebLogJsonAspect [doAfterReturning]:81 - {"response":{"result":"result is:2"},"spendTime":144,"status":200,"traceId":1551545000502}
+2019-03-03 00:43:20.649 INFO  [qtp1640458320-28] c.f.t.aspect.WebLogJsonAspect [doAfterReturning]:81 - {"response":{"result":"result is:2"},"spendTime":441,"status":200,"traceId":1551545000205}
+2019-03-03 00:43:20.649 INFO  [qtp1640458320-21] c.f.t.aspect.WebLogJsonAspect [doAfterReturning]:81 - {"response":{"result":"result is:2"},"spendTime":427,"status":200,"traceId":1551545000219}
+2019-03-03 00:43:20.649 INFO  [qtp1640458320-23] c.f.t.aspect.WebLogJsonAspect [doAfterReturning]:81 - {"response":{"result":"result is:2"},"spendTime":144,"status":200,"traceId":1551545000502}
+2019-03-03 00:43:20.649 INFO  [qtp1640458320-21] c.f.t.aspect.WebLogJsonAspect [doAfterReturning]:81 - {"response":{"result":"result is:2"},"spendTime":427,"status":200,"traceId":1551545000219}
+2019-03-03 00:43:20.649 INFO  [qtp1640458320-28] c.f.t.aspect.WebLogJsonAspect [doAfterReturning]:85 - Send message to kafka successfully
+2019-03-03 00:43:20.650 INFO  [qtp1640458320-21] c.f.t.aspect.WebLogJsonAspect [doAfterReturning]:85 - Send message to kafka successfully
+2019-03-03 00:43:20.650 INFO  [qtp1640458320-23] c.f.t.aspect.WebLogJsonAspect [doAfterReturning]:85 - Send message to kafka successfully
+2019-03-03 00:43:20.650 INFO  [qtp1640458320-21] c.f.t.aspect.WebLogJsonAspect [doAfterReturning]:85 - Send message to kafka successfully
+2019-03-03 00:43:20.649 INFO  [qtp1640458320-28] c.f.t.aspect.WebLogJsonAspect [doAfterReturning]:85 - Send message to kafka successfully
+2019-03-03 00:43:20.650 INFO  [qtp1640458320-23] c.f.t.aspect.WebLogJsonAspect [doAfterReturning]:85 - Send message to kafka successfully
+2019-03-03 00:43:22.108 INFO  [qtp1640458320-27] c.f.t.aspect.WebLogJsonAspect [doBefore]:62 - {"args":"[{\"author\":\"88888\",\"id\":0,\"name\":\"中文8\",\"price\":0.0,\"time\":1551514679813,\"version\":\"string\"}]","classMethod":"com.fw.tester.controller.BookController.createBook","httpMethod":"POST","traceId":1551545002108,"url":"http://localhost:8089/book"}
+2019-03-03 00:43:22.108 INFO  [qtp1640458320-27] c.f.t.aspect.WebLogJsonAspect [doBefore]:62 - {"args":"[{\"author\":\"88888\",\"id\":0,\"name\":\"中文8\",\"price\":0.0,\"time\":1551514679813,\"version\":\"string\"}]","classMethod":"com.fw.tester.controller.BookController.createBook","httpMethod":"POST","traceId":1551545002108,"url":"http://localhost:8089/book"}
+2019-03-03 00:43:22.110 INFO  [qtp1640458320-27] c.f.t.aspect.WebLogJsonAspect [doBefore]:67 - Send message to kafka successfully
+2019-03-03 00:43:22.110 INFO  [qtp1640458320-27] c.f.t.aspect.WebLogJsonAspect [doBefore]:67 - Send message to kafka successfully
+2019-03-03 00:43:22.110 INFO  [qtp1640458320-27] c.f.t.aspect.WebLogJsonAspect [doAfterReturning]:81 - {"response":{"result":"result is:2"},"spendTime":2,"status":200,"traceId":1551545002108}
+2019-03-03 00:43:22.110 INFO  [qtp1640458320-27] c.f.t.aspect.WebLogJsonAspect [doAfterReturning]:81 - {"response":{"result":"result is:2"},"spendTime":2,"status":200,"traceId":1551545002108}
+2019-03-03 00:43:22.111 INFO  [qtp1640458320-27] c.f.t.aspect.WebLogJsonAspect [doAfterReturning]:85 - Send message to kafka successfully
+2019-03-03 00:43:22.111 INFO  [qtp1640458320-27] c.f.t.aspect.WebLogJsonAspect [doAfterReturning]:85 - Send message to kafka successfully
+2019-03-03 00:43:22.273 INFO  [qtp1640458320-44] c.f.t.aspect.WebLogJsonAspect [doBefore]:62 - {"args":"[{\"author\":\"88888\",\"id\":0,\"name\":\"中文8\",\"price\":0.0,\"time\":1551514679813,\"version\":\"string\"}]","classMethod":"com.fw.tester.controller.BookController.createBook","httpMethod":"POST","traceId":1551545002273,"url":"http://localhost:8089/book"}
+2019-03-03 00:43:22.273 INFO  [qtp1640458320-44] c.f.t.aspect.WebLogJsonAspect [doBefore]:62 - {"args":"[{\"author\":\"88888\",\"id\":0,\"name\":\"中文8\",\"price\":0.0,\"time\":1551514679813,\"version\":\"string\"}]","classMethod":"com.fw.tester.controller.BookController.createBook","httpMethod":"POST","traceId":1551545002273,"url":"http://localhost:8089/book"}
+2019-03-03 00:43:22.275 INFO  [qtp1640458320-44] c.f.t.aspect.WebLogJsonAspect [doBefore]:67 - Send message to kafka successfully
+2019-03-03 00:43:22.275 INFO  [qtp1640458320-44] c.f.t.aspect.WebLogJsonAspect [doBefore]:67 - Send message to kafka successfully
+2019-03-03 00:43:22.277 INFO  [qtp1640458320-44] c.f.t.aspect.WebLogJsonAspect [doAfterReturning]:81 - {"response":{"result":"result is:2"},"spendTime":4,"status":200,"traceId":1551545002273}
+2019-03-03 00:43:22.277 INFO  [qtp1640458320-44] c.f.t.aspect.WebLogJsonAspect [doAfterReturning]:81 - {"response":{"result":"result is:2"},"spendTime":4,"status":200,"traceId":1551545002273}
+2019-03-03 00:43:22.278 INFO  [qtp1640458320-44] c.f.t.aspect.WebLogJsonAspect [doAfterReturning]:85 - Send message to kafka successfully
+2019-03-03 00:43:22.278 INFO  [qtp1640458320-44] c.f.t.aspect.WebLogJsonAspect [doAfterReturning]:85 - Send message to kafka successfully
+2019-03-03 00:43:24.718 INFO  [qtp1640458320-27] c.f.t.aspect.WebLogJsonAspect [doBefore]:62 - {"args":"[\"24\"]","classMethod":"com.fw.tester.controller.BookController.getBook","httpMethod":"GET","traceId":1551545004717,"url":"http://localhost:8089/book/24"}
+2019-03-03 00:43:24.718 INFO  [qtp1640458320-27] c.f.t.aspect.WebLogJsonAspect [doBefore]:62 - {"args":"[\"24\"]","classMethod":"com.fw.tester.controller.BookController.getBook","httpMethod":"GET","traceId":1551545004717,"url":"http://localhost:8089/book/24"}
+2019-03-03 00:43:24.719 INFO  [qtp1640458320-27] c.f.t.aspect.WebLogJsonAspect [doBefore]:67 - Send message to kafka successfully
+2019-03-03 00:43:24.719 INFO  [qtp1640458320-27] c.f.t.aspect.WebLogJsonAspect [doBefore]:67 - Send message to kafka successfully
+2019-03-03 00:43:24.721 INFO  [qtp1640458320-27] c.f.t.c.BookController [getBook]:41 - Http request params id:24
+2019-03-03 00:43:24.721 INFO  [qtp1640458320-27] c.f.tester.service.BookService [findBookById]:17 - find book by id24
+2019-03-03 00:43:24.791 INFO  [qtp1640458320-27] c.f.tester.service.BookService [findBookById]:29 - {"author":"yejingtao","id":24,"name":"Who am i","price":23.67,"time":{"date":3,"day":0,"hours":0,"minutes":43,"month":2,"seconds":24,"time":1551545004722,"timezoneOffset":-480,"year":119},"version":"V1"}
+2019-03-03 00:43:24.794 INFO  [qtp1640458320-27] c.f.t.aspect.WebLogJsonAspect [doAfterReturning]:81 - {"response":{"author":"yejingtao","id":24,"name":"Who am i","price":23.67,"time":1551545004722,"version":"V1"},"spendTime":75,"status":200,"traceId":1551545004717}
+2019-03-03 00:43:24.794 INFO  [qtp1640458320-27] c.f.t.aspect.WebLogJsonAspect [doAfterReturning]:81 - {"response":{"author":"yejingtao","id":24,"name":"Who am i","price":23.67,"time":1551545004722,"version":"V1"},"spendTime":75,"status":200,"traceId":1551545004717}
+2019-03-03 00:43:24.794 INFO  [qtp1640458320-27] c.f.t.aspect.WebLogJsonAspect [doAfterReturning]:85 - Send message to kafka successfully
+2019-03-03 00:43:24.794 INFO  [qtp1640458320-27] c.f.t.aspect.WebLogJsonAspect [doAfterReturning]:85 - Send message to kafka successfully
+2019-03-03 00:43:24.869 INFO  [qtp1640458320-44] c.f.t.aspect.WebLogJsonAspect [doBefore]:62 - {"args":"[\"24\"]","classMethod":"com.fw.tester.controller.BookController.getBook","httpMethod":"GET","traceId":1551545004869,"url":"http://localhost:8089/book/24"}
+2019-03-03 00:43:24.869 INFO  [qtp1640458320-44] c.f.t.aspect.WebLogJsonAspect [doBefore]:62 - {"args":"[\"24\"]","classMethod":"com.fw.tester.controller.BookController.getBook","httpMethod":"GET","traceId":1551545004869,"url":"http://localhost:8089/book/24"}
+2019-03-03 00:43:24.870 INFO  [qtp1640458320-44] c.f.t.aspect.WebLogJsonAspect [doBefore]:67 - Send message to kafka successfully
+2019-03-03 00:43:24.870 INFO  [qtp1640458320-44] c.f.t.aspect.WebLogJsonAspect [doBefore]:67 - Send message to kafka successfully
+2019-03-03 00:43:24.871 INFO  [qtp1640458320-44] c.f.t.c.BookController [getBook]:41 - Http request params id:24
+2019-03-03 00:43:24.871 INFO  [qtp1640458320-44] c.f.tester.service.BookService [findBookById]:17 - find book by id24
+2019-03-03 00:43:24.875 INFO  [qtp1640458320-44] c.f.tester.service.BookService [findBookById]:29 - {"author":"yejingtao","id":24,"name":"Who am i","price":23.67,"time":{"date":3,"day":0,"hours":0,"minutes":43,"month":2,"seconds":24,"time":1551545004872,"timezoneOffset":-480,"year":119},"version":"V1"}
+2019-03-03 00:43:24.875 INFO  [qtp1640458320-44] c.f.t.aspect.WebLogJsonAspect [doAfterReturning]:81 - {"response":{"author":"yejingtao","id":24,"name":"Who am i","price":23.67,"time":1551545004872,"version":"V1"},"spendTime":6,"status":200,"traceId":1551545004869}
+2019-03-03 00:43:24.875 INFO  [qtp1640458320-44] c.f.t.aspect.WebLogJsonAspect [doAfterReturning]:81 - {"response":{"author":"yejingtao","id":24,"name":"Who am i","price":23.67,"time":1551545004872,"version":"V1"},"spendTime":6,"status":200,"traceId":1551545004869}
+2019-03-03 00:43:24.876 INFO  [qtp1640458320-44] c.f.t.aspect.WebLogJsonAspect [doAfterReturning]:85 - Send message to kafka successfully
+2019-03-03 00:43:24.876 INFO  [qtp1640458320-44] c.f.t.aspect.WebLogJsonAspect [doAfterReturning]:85 - Send message to kafka successfully
+2019-03-03 00:43:25.035 INFO  [qtp1640458320-27] c.f.t.aspect.WebLogJsonAspect [doBefore]:62 - {"args":"[\"24\"]","classMethod":"com.fw.tester.controller.BookController.getBook","httpMethod":"GET","traceId":1551545005035,"url":"http://localhost:8089/book/24"}
+2019-03-03 00:43:25.035 INFO  [qtp1640458320-27] c.f.t.aspect.WebLogJsonAspect [doBefore]:62 - {"args":"[\"24\"]","classMethod":"com.fw.tester.controller.BookController.getBook","httpMethod":"GET","traceId":1551545005035,"url":"http://localhost:8089/book/24"}
+2019-03-03 00:43:25.036 INFO  [qtp1640458320-27] c.f.t.aspect.WebLogJsonAspect [doBefore]:67 - Send message to kafka successfully
+2019-03-03 00:43:25.036 INFO  [qtp1640458320-27] c.f.t.aspect.WebLogJsonAspect [doBefore]:67 - Send message to kafka successfully
+2019-03-03 00:43:25.037 INFO  [qtp1640458320-27] c.f.t.c.BookController [getBook]:41 - Http request params id:24
+2019-03-03 00:43:25.038 INFO  [qtp1640458320-27] c.f.tester.service.BookService [findBookById]:17 - find book by id24
+2019-03-03 00:43:25.039 INFO  [qtp1640458320-27] c.f.tester.service.BookService [findBookById]:29 - {"author":"yejingtao","id":24,"name":"Who am i","price":23.67,"time":{"date":3,"day":0,"hours":0,"minutes":43,"month":2,"seconds":25,"time":1551545005038,"timezoneOffset":-480,"year":119},"version":"V1"}
+2019-03-03 00:43:25.040 INFO  [qtp1640458320-27] c.f.t.aspect.WebLogJsonAspect [doAfterReturning]:81 - {"response":{"author":"yejingtao","id":24,"name":"Who am i","price":23.67,"time":1551545005038,"version":"V1"},"spendTime":5,"status":200,"traceId":1551545005035}
+2019-03-03 00:43:25.040 INFO  [qtp1640458320-27] c.f.t.aspect.WebLogJsonAspect [doAfterReturning]:81 - {"response":{"author":"yejingtao","id":24,"name":"Who am i","price":23.67,"time":1551545005038,"version":"V1"},"spendTime":5,"status":200,"traceId":1551545005035}
+2019-03-03 00:43:25.041 INFO  [qtp1640458320-27] c.f.t.aspect.WebLogJsonAspect [doAfterReturning]:85 - Send message to kafka successfully
+2019-03-03 00:43:25.041 INFO  [qtp1640458320-27] c.f.t.aspect.WebLogJsonAspect [doAfterReturning]:85 - Send message to kafka successfully
+2019-03-03 00:43:25.188 INFO  [qtp1640458320-44] c.f.t.aspect.WebLogJsonAspect [doBefore]:62 - {"args":"[\"24\"]","classMethod":"com.fw.tester.controller.BookController.getBook","httpMethod":"GET","traceId":1551545005187,"url":"http://localhost:8089/book/24"}
+2019-03-03 00:43:25.188 INFO  [qtp1640458320-44] c.f.t.aspect.WebLogJsonAspect [doBefore]:62 - {"args":"[\"24\"]","classMethod":"com.fw.tester.controller.BookController.getBook","httpMethod":"GET","traceId":1551545005187,"url":"http://localhost:8089/book/24"}
+2019-03-03 00:43:25.190 INFO  [qtp1640458320-44] c.f.t.aspect.WebLogJsonAspect [doBefore]:67 - Send message to kafka successfully
+2019-03-03 00:43:25.190 INFO  [qtp1640458320-44] c.f.t.aspect.WebLogJsonAspect [doBefore]:67 - Send message to kafka successfully
+2019-03-03 00:43:25.192 INFO  [qtp1640458320-44] c.f.t.c.BookController [getBook]:41 - Http request params id:24
+2019-03-03 00:43:25.192 INFO  [qtp1640458320-44] c.f.tester.service.BookService [findBookById]:17 - find book by id24
+2019-03-03 00:43:25.193 INFO  [qtp1640458320-44] c.f.tester.service.BookService [findBookById]:29 - {"author":"yejingtao","id":24,"name":"Who am i","price":23.67,"time":{"date":3,"day":0,"hours":0,"minutes":43,"month":2,"seconds":25,"time":1551545005192,"timezoneOffset":-480,"year":119},"version":"V1"}
+2019-03-03 00:43:25.194 INFO  [qtp1640458320-44] c.f.t.aspect.WebLogJsonAspect [doAfterReturning]:81 - {"response":{"author":"yejingtao","id":24,"name":"Who am i","price":23.67,"time":1551545005192,"version":"V1"},"spendTime":7,"status":200,"traceId":1551545005187}
+2019-03-03 00:43:25.194 INFO  [qtp1640458320-44] c.f.t.aspect.WebLogJsonAspect [doAfterReturning]:81 - {"response":{"author":"yejingtao","id":24,"name":"Who am i","price":23.67,"time":1551545005192,"version":"V1"},"spendTime":7,"status":200,"traceId":1551545005187}
+2019-03-03 00:43:25.196 INFO  [qtp1640458320-44] c.f.t.aspect.WebLogJsonAspect [doAfterReturning]:85 - Send message to kafka successfully
+2019-03-03 00:43:25.196 INFO  [qtp1640458320-44] c.f.t.aspect.WebLogJsonAspect [doAfterReturning]:85 - Send message to kafka successfully
+2019-03-03 00:43:25.499 INFO  [qtp1640458320-27] c.f.t.aspect.WebLogJsonAspect [doBefore]:62 - {"args":"[\"24\"]","classMethod":"com.fw.tester.controller.BookController.getBook","httpMethod":"GET","traceId":1551545005499,"url":"http://localhost:8089/book/24"}
+2019-03-03 00:43:25.499 INFO  [qtp1640458320-27] c.f.t.aspect.WebLogJsonAspect [doBefore]:62 - {"args":"[\"24\"]","classMethod":"com.fw.tester.controller.BookController.getBook","httpMethod":"GET","traceId":1551545005499,"url":"http://localhost:8089/book/24"}
+2019-03-03 00:43:25.500 INFO  [qtp1640458320-27] c.f.t.aspect.WebLogJsonAspect [doBefore]:67 - Send message to kafka successfully
+2019-03-03 00:43:25.500 INFO  [qtp1640458320-27] c.f.t.aspect.WebLogJsonAspect [doBefore]:67 - Send message to kafka successfully
+2019-03-03 00:43:25.500 INFO  [qtp1640458320-27] c.f.t.c.BookController [getBook]:41 - Http request params id:24
+2019-03-03 00:43:25.501 INFO  [qtp1640458320-27] c.f.tester.service.BookService [findBookById]:17 - find book by id24
+2019-03-03 00:43:25.502 INFO  [qtp1640458320-27] c.f.tester.service.BookService [findBookById]:29 - {"author":"yejingtao","id":24,"name":"Who am i","price":23.67,"time":{"date":3,"day":0,"hours":0,"minutes":43,"month":2,"seconds":25,"time":1551545005501,"timezoneOffset":-480,"year":119},"version":"V1"}
+2019-03-03 00:43:25.502 INFO  [qtp1640458320-27] c.f.t.aspect.WebLogJsonAspect [doAfterReturning]:81 - {"response":{"author":"yejingtao","id":24,"name":"Who am i","price":23.67,"time":1551545005501,"version":"V1"},"spendTime":3,"status":200,"traceId":1551545005499}
+2019-03-03 00:43:25.502 INFO  [qtp1640458320-27] c.f.t.aspect.WebLogJsonAspect [doAfterReturning]:81 - {"response":{"author":"yejingtao","id":24,"name":"Who am i","price":23.67,"time":1551545005501,"version":"V1"},"spendTime":3,"status":200,"traceId":1551545005499}
+2019-03-03 00:43:25.502 INFO  [qtp1640458320-27] c.f.t.aspect.WebLogJsonAspect [doAfterReturning]:85 - Send message to kafka successfully
+2019-03-03 00:43:25.502 INFO  [qtp1640458320-27] c.f.t.aspect.WebLogJsonAspect [doAfterReturning]:85 - Send message to kafka successfully
+2019-03-03 00:43:25.673 INFO  [qtp1640458320-44] c.f.t.aspect.WebLogJsonAspect [doBefore]:62 - {"args":"[\"24\"]","classMethod":"com.fw.tester.controller.BookController.getBook","httpMethod":"GET","traceId":1551545005673,"url":"http://localhost:8089/book/24"}
+2019-03-03 00:43:25.673 INFO  [qtp1640458320-44] c.f.t.aspect.WebLogJsonAspect [doBefore]:62 - {"args":"[\"24\"]","classMethod":"com.fw.tester.controller.BookController.getBook","httpMethod":"GET","traceId":1551545005673,"url":"http://localhost:8089/book/24"}
+2019-03-03 00:43:25.675 INFO  [qtp1640458320-44] c.f.t.aspect.WebLogJsonAspect [doBefore]:67 - Send message to kafka successfully
+2019-03-03 00:43:25.675 INFO  [qtp1640458320-44] c.f.t.aspect.WebLogJsonAspect [doBefore]:67 - Send message to kafka successfully
+2019-03-03 00:43:25.676 INFO  [qtp1640458320-44] c.f.t.c.BookController [getBook]:41 - Http request params id:24
+2019-03-03 00:43:25.677 INFO  [qtp1640458320-44] c.f.tester.service.BookService [findBookById]:17 - find book by id24
+2019-03-03 00:43:25.679 INFO  [qtp1640458320-44] c.f.tester.service.BookService [findBookById]:29 - {"author":"yejingtao","id":24,"name":"Who am i","price":23.67,"time":{"date":3,"day":0,"hours":0,"minutes":43,"month":2,"seconds":25,"time":1551545005678,"timezoneOffset":-480,"year":119},"version":"V1"}
+2019-03-03 00:43:25.680 INFO  [qtp1640458320-44] c.f.t.aspect.WebLogJsonAspect [doAfterReturning]:81 - {"response":{"author":"yejingtao","id":24,"name":"Who am i","price":23.67,"time":1551545005678,"version":"V1"},"spendTime":7,"status":200,"traceId":1551545005673}
+2019-03-03 00:43:25.680 INFO  [qtp1640458320-44] c.f.t.aspect.WebLogJsonAspect [doAfterReturning]:81 - {"response":{"author":"yejingtao","id":24,"name":"Who am i","price":23.67,"time":1551545005678,"version":"V1"},"spendTime":7,"status":200,"traceId":1551545005673}
+2019-03-03 00:43:25.681 INFO  [qtp1640458320-44] c.f.t.aspect.WebLogJsonAspect [doAfterReturning]:85 - Send message to kafka successfully
+2019-03-03 00:43:25.681 INFO  [qtp1640458320-44] c.f.t.aspect.WebLogJsonAspect [doAfterReturning]:85 - Send message to kafka successfully
+2019-03-03 00:43:28.822 INFO  [qtp1640458320-27] c.f.t.aspect.WebLogJsonAspect [doBefore]:62 - {"args":"[3]","classMethod":"com.fw.tester.controller.sub.SubBookController.getBook","httpMethod":"GET","traceId":1551545008822,"url":"http://localhost:8089/sub/account/3"}
+2019-03-03 00:43:28.822 INFO  [qtp1640458320-27] c.f.t.aspect.WebLogJsonAspect [doBefore]:62 - {"args":"[3]","classMethod":"com.fw.tester.controller.sub.SubBookController.getBook","httpMethod":"GET","traceId":1551545008822,"url":"http://localhost:8089/sub/account/3"}
+2019-03-03 00:43:28.824 INFO  [qtp1640458320-27] c.f.t.aspect.WebLogJsonAspect [doBefore]:67 - Send message to kafka successfully
+2019-03-03 00:43:28.824 INFO  [qtp1640458320-27] c.f.t.aspect.WebLogJsonAspect [doBefore]:67 - Send message to kafka successfully
+2019-03-03 00:43:28.829 INFO  [qtp1640458320-27] c.f.t.c.sub.SubBookController [getBook]:25 - Sub http request params id:3
+2019-03-03 00:43:28.830 INFO  [qtp1640458320-27] c.f.tester.service.BookService [findBookById]:17 - find book by id3
+2019-03-03 00:43:28.831 INFO  [qtp1640458320-27] c.f.tester.service.BookService [findBookById]:29 - {"author":"yejingtao","id":3,"name":"Who am i","price":23.67,"time":{"date":3,"day":0,"hours":0,"minutes":43,"month":2,"seconds":28,"time":1551545008830,"timezoneOffset":-480,"year":119},"version":"V1"}
+2019-03-03 00:43:28.832 INFO  [qtp1640458320-27] c.f.t.aspect.WebLogJsonAspect [doAfterReturning]:81 - {"response":{"author":"yejingtao","id":3,"name":"Who am i","price":23.67,"time":1551545008830,"version":"V1"},"spendTime":10,"status":200,"traceId":1551545008822}
+2019-03-03 00:43:28.832 INFO  [qtp1640458320-27] c.f.t.aspect.WebLogJsonAspect [doAfterReturning]:81 - {"response":{"author":"yejingtao","id":3,"name":"Who am i","price":23.67,"time":1551545008830,"version":"V1"},"spendTime":10,"status":200,"traceId":1551545008822}
+2019-03-03 00:43:28.833 INFO  [qtp1640458320-27] c.f.t.aspect.WebLogJsonAspect [doAfterReturning]:85 - Send message to kafka successfully
+2019-03-03 00:43:28.833 INFO  [qtp1640458320-27] c.f.t.aspect.WebLogJsonAspect [doAfterReturning]:85 - Send message to kafka successfully
+2019-03-03 00:43:28.961 INFO  [qtp1640458320-44] c.f.t.aspect.WebLogJsonAspect [doBefore]:62 - {"args":"[3]","classMethod":"com.fw.tester.controller.sub.SubBookController.getBook","httpMethod":"GET","traceId":1551545008961,"url":"http://localhost:8089/sub/account/3"}
+2019-03-03 00:43:28.961 INFO  [qtp1640458320-44] c.f.t.aspect.WebLogJsonAspect [doBefore]:62 - {"args":"[3]","classMethod":"com.fw.tester.controller.sub.SubBookController.getBook","httpMethod":"GET","traceId":1551545008961,"url":"http://localhost:8089/sub/account/3"}
+2019-03-03 00:43:28.963 INFO  [qtp1640458320-44] c.f.t.aspect.WebLogJsonAspect [doBefore]:67 - Send message to kafka successfully
+2019-03-03 00:43:28.963 INFO  [qtp1640458320-44] c.f.t.aspect.WebLogJsonAspect [doBefore]:67 - Send message to kafka successfully
+2019-03-03 00:43:28.964 INFO  [qtp1640458320-44] c.f.t.c.sub.SubBookController [getBook]:25 - Sub http request params id:3
+2019-03-03 00:43:28.964 INFO  [qtp1640458320-44] c.f.tester.service.BookService [findBookById]:17 - find book by id3
+2019-03-03 00:43:28.965 INFO  [qtp1640458320-44] c.f.tester.service.BookService [findBookById]:29 - {"author":"yejingtao","id":3,"name":"Who am i","price":23.67,"time":{"date":3,"day":0,"hours":0,"minutes":43,"month":2,"seconds":28,"time":1551545008965,"timezoneOffset":-480,"year":119},"version":"V1"}
+2019-03-03 00:43:28.966 INFO  [qtp1640458320-44] c.f.t.aspect.WebLogJsonAspect [doAfterReturning]:81 - {"response":{"author":"yejingtao","id":3,"name":"Who am i","price":23.67,"time":1551545008965,"version":"V1"},"spendTime":5,"status":200,"traceId":1551545008961}
+2019-03-03 00:43:28.966 INFO  [qtp1640458320-44] c.f.t.aspect.WebLogJsonAspect [doAfterReturning]:81 - {"response":{"author":"yejingtao","id":3,"name":"Who am i","price":23.67,"time":1551545008965,"version":"V1"},"spendTime":5,"status":200,"traceId":1551545008961}
+2019-03-03 00:43:28.967 INFO  [qtp1640458320-44] c.f.t.aspect.WebLogJsonAspect [doAfterReturning]:85 - Send message to kafka successfully
+2019-03-03 00:43:28.967 INFO  [qtp1640458320-44] c.f.t.aspect.WebLogJsonAspect [doAfterReturning]:85 - Send message to kafka successfully
+2019-03-03 00:43:29.128 INFO  [qtp1640458320-27] c.f.t.aspect.WebLogJsonAspect [doBefore]:62 - {"args":"[3]","classMethod":"com.fw.tester.controller.sub.SubBookController.getBook","httpMethod":"GET","traceId":1551545009127,"url":"http://localhost:8089/sub/account/3"}
+2019-03-03 00:43:29.128 INFO  [qtp1640458320-27] c.f.t.aspect.WebLogJsonAspect [doBefore]:62 - {"args":"[3]","classMethod":"com.fw.tester.controller.sub.SubBookController.getBook","httpMethod":"GET","traceId":1551545009127,"url":"http://localhost:8089/sub/account/3"}
+2019-03-03 00:43:29.129 INFO  [qtp1640458320-27] c.f.t.aspect.WebLogJsonAspect [doBefore]:67 - Send message to kafka successfully
+2019-03-03 00:43:29.129 INFO  [qtp1640458320-27] c.f.t.aspect.WebLogJsonAspect [doBefore]:67 - Send message to kafka successfully
+2019-03-03 00:43:29.130 INFO  [qtp1640458320-27] c.f.t.c.sub.SubBookController [getBook]:25 - Sub http request params id:3
+2019-03-03 00:43:29.131 INFO  [qtp1640458320-27] c.f.tester.service.BookService [findBookById]:17 - find book by id3
+2019-03-03 00:43:29.132 INFO  [qtp1640458320-27] c.f.tester.service.BookService [findBookById]:29 - {"author":"yejingtao","id":3,"name":"Who am i","price":23.67,"time":{"date":3,"day":0,"hours":0,"minutes":43,"month":2,"seconds":29,"time":1551545009131,"timezoneOffset":-480,"year":119},"version":"V1"}
+2019-03-03 00:43:29.133 INFO  [qtp1640458320-27] c.f.t.aspect.WebLogJsonAspect [doAfterReturning]:81 - {"response":{"author":"yejingtao","id":3,"name":"Who am i","price":23.67,"time":1551545009131,"version":"V1"},"spendTime":6,"status":200,"traceId":1551545009127}
+2019-03-03 00:43:29.133 INFO  [qtp1640458320-27] c.f.t.aspect.WebLogJsonAspect [doAfterReturning]:81 - {"response":{"author":"yejingtao","id":3,"name":"Who am i","price":23.67,"time":1551545009131,"version":"V1"},"spendTime":6,"status":200,"traceId":1551545009127}
+2019-03-03 00:43:29.134 INFO  [qtp1640458320-27] c.f.t.aspect.WebLogJsonAspect [doAfterReturning]:85 - Send message to kafka successfully
+2019-03-03 00:43:29.134 INFO  [qtp1640458320-27] c.f.t.aspect.WebLogJsonAspect [doAfterReturning]:85 - Send message to kafka successfully
+2019-03-03 00:43:29.274 INFO  [qtp1640458320-44] c.f.t.aspect.WebLogJsonAspect [doBefore]:62 - {"args":"[3]","classMethod":"com.fw.tester.controller.sub.SubBookController.getBook","httpMethod":"GET","traceId":1551545009274,"url":"http://localhost:8089/sub/account/3"}
+2019-03-03 00:43:29.274 INFO  [qtp1640458320-44] c.f.t.aspect.WebLogJsonAspect [doBefore]:62 - {"args":"[3]","classMethod":"com.fw.tester.controller.sub.SubBookController.getBook","httpMethod":"GET","traceId":1551545009274,"url":"http://localhost:8089/sub/account/3"}
+2019-03-03 00:43:29.275 INFO  [qtp1640458320-44] c.f.t.aspect.WebLogJsonAspect [doBefore]:67 - Send message to kafka successfully
+2019-03-03 00:43:29.275 INFO  [qtp1640458320-44] c.f.t.aspect.WebLogJsonAspect [doBefore]:67 - Send message to kafka successfully
+2019-03-03 00:43:29.275 INFO  [qtp1640458320-44] c.f.t.c.sub.SubBookController [getBook]:25 - Sub http request params id:3
+2019-03-03 00:43:29.276 INFO  [qtp1640458320-44] c.f.tester.service.BookService [findBookById]:17 - find book by id3
+2019-03-03 00:43:29.276 INFO  [qtp1640458320-44] c.f.tester.service.BookService [findBookById]:29 - {"author":"yejingtao","id":3,"name":"Who am i","price":23.67,"time":{"date":3,"day":0,"hours":0,"minutes":43,"month":2,"seconds":29,"time":1551545009276,"timezoneOffset":-480,"year":119},"version":"V1"}
+2019-03-03 00:43:29.277 INFO  [qtp1640458320-44] c.f.t.aspect.WebLogJsonAspect [doAfterReturning]:81 - {"response":{"author":"yejingtao","id":3,"name":"Who am i","price":23.67,"time":1551545009276,"version":"V1"},"spendTime":3,"status":200,"traceId":1551545009274}
+2019-03-03 00:43:29.277 INFO  [qtp1640458320-44] c.f.t.aspect.WebLogJsonAspect [doAfterReturning]:81 - {"response":{"author":"yejingtao","id":3,"name":"Who am i","price":23.67,"time":1551545009276,"version":"V1"},"spendTime":3,"status":200,"traceId":1551545009274}
+2019-03-03 00:43:29.277 INFO  [qtp1640458320-44] c.f.t.aspect.WebLogJsonAspect [doAfterReturning]:85 - Send message to kafka successfully
+2019-03-03 00:43:29.277 INFO  [qtp1640458320-44] c.f.t.aspect.WebLogJsonAspect [doAfterReturning]:85 - Send message to kafka successfully
+2019-03-03 00:43:29.425 INFO  [qtp1640458320-27] c.f.t.aspect.WebLogJsonAspect [doBefore]:62 - {"args":"[3]","classMethod":"com.fw.tester.controller.sub.SubBookController.getBook","httpMethod":"GET","traceId":1551545009425,"url":"http://localhost:8089/sub/account/3"}
+2019-03-03 00:43:29.425 INFO  [qtp1640458320-27] c.f.t.aspect.WebLogJsonAspect [doBefore]:62 - {"args":"[3]","classMethod":"com.fw.tester.controller.sub.SubBookController.getBook","httpMethod":"GET","traceId":1551545009425,"url":"http://localhost:8089/sub/account/3"}
+2019-03-03 00:43:29.426 INFO  [qtp1640458320-27] c.f.t.aspect.WebLogJsonAspect [doBefore]:67 - Send message to kafka successfully
+2019-03-03 00:43:29.426 INFO  [qtp1640458320-27] c.f.t.aspect.WebLogJsonAspect [doBefore]:67 - Send message to kafka successfully
+2019-03-03 00:43:29.428 INFO  [qtp1640458320-27] c.f.t.c.sub.SubBookController [getBook]:25 - Sub http request params id:3
+2019-03-03 00:43:29.428 INFO  [qtp1640458320-27] c.f.tester.service.BookService [findBookById]:17 - find book by id3
+2019-03-03 00:43:29.430 INFO  [qtp1640458320-27] c.f.tester.service.BookService [findBookById]:29 - {"author":"yejingtao","id":3,"name":"Who am i","price":23.67,"time":{"date":3,"day":0,"hours":0,"minutes":43,"month":2,"seconds":29,"time":1551545009429,"timezoneOffset":-480,"year":119},"version":"V1"}
+2019-03-03 00:43:29.431 INFO  [qtp1640458320-27] c.f.t.aspect.WebLogJsonAspect [doAfterReturning]:81 - {"response":{"author":"yejingtao","id":3,"name":"Who am i","price":23.67,"time":1551545009429,"version":"V1"},"spendTime":6,"status":200,"traceId":1551545009425}
+2019-03-03 00:43:29.431 INFO  [qtp1640458320-27] c.f.t.aspect.WebLogJsonAspect [doAfterReturning]:81 - {"response":{"author":"yejingtao","id":3,"name":"Who am i","price":23.67,"time":1551545009429,"version":"V1"},"spendTime":6,"status":200,"traceId":1551545009425}
+2019-03-03 00:43:29.432 INFO  [qtp1640458320-27] c.f.t.aspect.WebLogJsonAspect [doAfterReturning]:85 - Send message to kafka successfully
+2019-03-03 00:43:29.432 INFO  [qtp1640458320-27] c.f.t.aspect.WebLogJsonAspect [doAfterReturning]:85 - Send message to kafka successfully
+2019-03-03 00:43:34.389 INFO  [qtp1640458320-44] c.f.t.aspect.WebLogJsonAspect [doBefore]:62 - {"args":"[\"24\"]","classMethod":"com.fw.tester.controller.BookController.getBook","httpMethod":"GET","traceId":1551545014389,"url":"http://localhost:8089/book/24"}
+2019-03-03 00:43:34.389 INFO  [qtp1640458320-44] c.f.t.aspect.WebLogJsonAspect [doBefore]:62 - {"args":"[\"24\"]","classMethod":"com.fw.tester.controller.BookController.getBook","httpMethod":"GET","traceId":1551545014389,"url":"http://localhost:8089/book/24"}
+2019-03-03 00:43:34.391 INFO  [qtp1640458320-44] c.f.t.aspect.WebLogJsonAspect [doBefore]:67 - Send message to kafka successfully
+2019-03-03 00:43:34.391 INFO  [qtp1640458320-44] c.f.t.aspect.WebLogJsonAspect [doBefore]:67 - Send message to kafka successfully
+2019-03-03 00:43:34.391 INFO  [qtp1640458320-44] c.f.t.c.BookController [getBook]:41 - Http request params id:24
+2019-03-03 00:43:34.392 INFO  [qtp1640458320-44] c.f.tester.service.BookService [findBookById]:17 - find book by id24
+2019-03-03 00:43:34.392 INFO  [qtp1640458320-44] c.f.tester.service.BookService [findBookById]:29 - {"author":"yejingtao","id":24,"name":"Who am i","price":23.67,"time":{"date":3,"day":0,"hours":0,"minutes":43,"month":2,"seconds":34,"time":1551545014392,"timezoneOffset":-480,"year":119},"version":"V1"}
+2019-03-03 00:43:34.393 INFO  [qtp1640458320-44] c.f.t.aspect.WebLogJsonAspect [doAfterReturning]:81 - {"response":{"author":"yejingtao","id":24,"name":"Who am i","price":23.67,"time":1551545014392,"version":"V1"},"spendTime":4,"status":200,"traceId":1551545014389}
+2019-03-03 00:43:34.393 INFO  [qtp1640458320-44] c.f.t.aspect.WebLogJsonAspect [doAfterReturning]:81 - {"response":{"author":"yejingtao","id":24,"name":"Who am i","price":23.67,"time":1551545014392,"version":"V1"},"spendTime":4,"status":200,"traceId":1551545014389}
+2019-03-03 00:43:34.394 INFO  [qtp1640458320-44] c.f.t.aspect.WebLogJsonAspect [doAfterReturning]:85 - Send message to kafka successfully
+2019-03-03 00:43:34.394 INFO  [qtp1640458320-44] c.f.t.aspect.WebLogJsonAspect [doAfterReturning]:85 - Send message to kafka successfully
+2019-03-03 00:43:34.538 INFO  [qtp1640458320-27] c.f.t.aspect.WebLogJsonAspect [doBefore]:62 - {"args":"[\"24\"]","classMethod":"com.fw.tester.controller.BookController.getBook","httpMethod":"GET","traceId":1551545014538,"url":"http://localhost:8089/book/24"}
+2019-03-03 00:43:34.538 INFO  [qtp1640458320-27] c.f.t.aspect.WebLogJsonAspect [doBefore]:62 - {"args":"[\"24\"]","classMethod":"com.fw.tester.controller.BookController.getBook","httpMethod":"GET","traceId":1551545014538,"url":"http://localhost:8089/book/24"}
+2019-03-03 00:43:34.539 INFO  [qtp1640458320-27] c.f.t.aspect.WebLogJsonAspect [doBefore]:67 - Send message to kafka successfully
+2019-03-03 00:43:34.539 INFO  [qtp1640458320-27] c.f.t.aspect.WebLogJsonAspect [doBefore]:67 - Send message to kafka successfully
+2019-03-03 00:43:34.540 INFO  [qtp1640458320-27] c.f.t.c.BookController [getBook]:41 - Http request params id:24
+2019-03-03 00:43:34.540 INFO  [qtp1640458320-27] c.f.tester.service.BookService [findBookById]:17 - find book by id24
+2019-03-03 00:43:34.541 INFO  [qtp1640458320-27] c.f.tester.service.BookService [findBookById]:29 - {"author":"yejingtao","id":24,"name":"Who am i","price":23.67,"time":{"date":3,"day":0,"hours":0,"minutes":43,"month":2,"seconds":34,"time":1551545014541,"timezoneOffset":-480,"year":119},"version":"V1"}
+2019-03-03 00:43:34.542 INFO  [qtp1640458320-27] c.f.t.aspect.WebLogJsonAspect [doAfterReturning]:81 - {"response":{"author":"yejingtao","id":24,"name":"Who am i","price":23.67,"time":1551545014541,"version":"V1"},"spendTime":4,"status":200,"traceId":1551545014538}
+2019-03-03 00:43:34.542 INFO  [qtp1640458320-27] c.f.t.aspect.WebLogJsonAspect [doAfterReturning]:81 - {"response":{"author":"yejingtao","id":24,"name":"Who am i","price":23.67,"time":1551545014541,"version":"V1"},"spendTime":4,"status":200,"traceId":1551545014538}
+2019-03-03 00:43:34.542 INFO  [qtp1640458320-27] c.f.t.aspect.WebLogJsonAspect [doAfterReturning]:85 - Send message to kafka successfully
+2019-03-03 00:43:34.542 INFO  [qtp1640458320-27] c.f.t.aspect.WebLogJsonAspect [doAfterReturning]:85 - Send message to kafka successfully
+2019-03-03 00:43:37.057 INFO  [qtp1640458320-44] c.f.t.aspect.WebLogJsonAspect [doBefore]:62 - {"args":"[{\"author\":\"88888\",\"id\":0,\"name\":\"中文8\",\"price\":0.0,\"time\":1551514679813,\"version\":\"string\"}]","classMethod":"com.fw.tester.controller.BookController.createBook","httpMethod":"POST","traceId":1551545017057,"url":"http://localhost:8089/book"}
+2019-03-03 00:43:37.057 INFO  [qtp1640458320-44] c.f.t.aspect.WebLogJsonAspect [doBefore]:62 - {"args":"[{\"author\":\"88888\",\"id\":0,\"name\":\"中文8\",\"price\":0.0,\"time\":1551514679813,\"version\":\"string\"}]","classMethod":"com.fw.tester.controller.BookController.createBook","httpMethod":"POST","traceId":1551545017057,"url":"http://localhost:8089/book"}
+2019-03-03 00:43:37.059 INFO  [qtp1640458320-44] c.f.t.aspect.WebLogJsonAspect [doBefore]:67 - Send message to kafka successfully
+2019-03-03 00:43:37.059 INFO  [qtp1640458320-44] c.f.t.aspect.WebLogJsonAspect [doBefore]:67 - Send message to kafka successfully
+2019-03-03 00:43:37.061 INFO  [qtp1640458320-44] c.f.t.aspect.WebLogJsonAspect [doAfterReturning]:81 - {"response":{"result":"result is:2"},"spendTime":4,"status":200,"traceId":1551545017057}
+2019-03-03 00:43:37.061 INFO  [qtp1640458320-44] c.f.t.aspect.WebLogJsonAspect [doAfterReturning]:81 - {"response":{"result":"result is:2"},"spendTime":4,"status":200,"traceId":1551545017057}
+2019-03-03 00:43:37.062 INFO  [qtp1640458320-44] c.f.t.aspect.WebLogJsonAspect [doAfterReturning]:85 - Send message to kafka successfully
+2019-03-03 00:43:37.062 INFO  [qtp1640458320-44] c.f.t.aspect.WebLogJsonAspect [doAfterReturning]:85 - Send message to kafka successfully
+2019-03-03 00:43:37.223 INFO  [qtp1640458320-27] c.f.t.aspect.WebLogJsonAspect [doBefore]:62 - {"args":"[{\"author\":\"88888\",\"id\":0,\"name\":\"中文8\",\"price\":0.0,\"time\":1551514679813,\"version\":\"string\"}]","classMethod":"com.fw.tester.controller.BookController.createBook","httpMethod":"POST","traceId":1551545017223,"url":"http://localhost:8089/book"}
+2019-03-03 00:43:37.223 INFO  [qtp1640458320-27] c.f.t.aspect.WebLogJsonAspect [doBefore]:62 - {"args":"[{\"author\":\"88888\",\"id\":0,\"name\":\"中文8\",\"price\":0.0,\"time\":1551514679813,\"version\":\"string\"}]","classMethod":"com.fw.tester.controller.BookController.createBook","httpMethod":"POST","traceId":1551545017223,"url":"http://localhost:8089/book"}
+2019-03-03 00:43:37.224 INFO  [qtp1640458320-27] c.f.t.aspect.WebLogJsonAspect [doBefore]:67 - Send message to kafka successfully
+2019-03-03 00:43:37.224 INFO  [qtp1640458320-27] c.f.t.aspect.WebLogJsonAspect [doBefore]:67 - Send message to kafka successfully
+2019-03-03 00:43:37.226 INFO  [qtp1640458320-27] c.f.t.aspect.WebLogJsonAspect [doAfterReturning]:81 - {"response":{"result":"result is:2"},"spendTime":3,"status":200,"traceId":1551545017223}
+2019-03-03 00:43:37.226 INFO  [qtp1640458320-27] c.f.t.aspect.WebLogJsonAspect [doAfterReturning]:81 - {"response":{"result":"result is:2"},"spendTime":3,"status":200,"traceId":1551545017223}
+2019-03-03 00:43:37.228 INFO  [qtp1640458320-27] c.f.t.aspect.WebLogJsonAspect [doAfterReturning]:85 - Send message to kafka successfully
+2019-03-03 00:43:37.228 INFO  [qtp1640458320-27] c.f.t.aspect.WebLogJsonAspect [doAfterReturning]:85 - Send message to kafka successfully
+2019-03-03 00:45:29.748 INFO  [qtp1640458320-43] c.f.t.aspect.WebLogJsonAspect [doBefore]:62 - {"args":"[33]","classMethod":"com.fw.tester.controller.sub.SubBookController.getBook","httpMethod":"GET","traceId":1551545129747,"url":"http://localhost:8089/sub/account/33"}
+2019-03-03 00:45:29.748 INFO  [qtp1640458320-43] c.f.t.aspect.WebLogJsonAspect [doBefore]:62 - {"args":"[33]","classMethod":"com.fw.tester.controller.sub.SubBookController.getBook","httpMethod":"GET","traceId":1551545129747,"url":"http://localhost:8089/sub/account/33"}
+2019-03-03 00:45:29.750 INFO  [qtp1640458320-43] c.f.t.aspect.WebLogJsonAspect [doBefore]:67 - Send message to kafka successfully
+2019-03-03 00:45:29.750 INFO  [qtp1640458320-43] c.f.t.aspect.WebLogJsonAspect [doBefore]:67 - Send message to kafka successfully
+2019-03-03 00:45:29.751 INFO  [qtp1640458320-43] c.f.t.c.sub.SubBookController [getBook]:25 - Sub http request params id:33
+2019-03-03 00:45:29.751 INFO  [qtp1640458320-43] c.f.tester.service.BookService [findBookById]:17 - find book by id33
+2019-03-03 00:45:29.753 INFO  [qtp1640458320-43] c.f.tester.service.BookService [findBookById]:29 - {"author":"yejingtao","id":33,"name":"Who am i","price":23.67,"time":{"date":3,"day":0,"hours":0,"minutes":45,"month":2,"seconds":29,"time":1551545129752,"timezoneOffset":-480,"year":119},"version":"V1"}
+2019-03-03 00:45:29.754 INFO  [qtp1640458320-43] c.f.t.aspect.WebLogJsonAspect [doAfterReturning]:81 - {"response":{"author":"yejingtao","id":33,"name":"Who am i","price":23.67,"time":1551545129752,"version":"V1"},"spendTime":7,"status":200,"traceId":1551545129747}
+2019-03-03 00:45:29.754 INFO  [qtp1640458320-43] c.f.t.aspect.WebLogJsonAspect [doAfterReturning]:81 - {"response":{"author":"yejingtao","id":33,"name":"Who am i","price":23.67,"time":1551545129752,"version":"V1"},"spendTime":7,"status":200,"traceId":1551545129747}
+2019-03-03 00:45:29.755 INFO  [qtp1640458320-43] c.f.t.aspect.WebLogJsonAspect [doAfterReturning]:85 - Send message to kafka successfully
+2019-03-03 00:45:29.755 INFO  [qtp1640458320-43] c.f.t.aspect.WebLogJsonAspect [doAfterReturning]:85 - Send message to kafka successfully
+2019-03-03 00:45:38.631 INFO  [qtp1640458320-23] c.f.t.aspect.WebLogJsonAspect [doBefore]:62 - {"args":"[{\"author\":\"string\",\"id\":0,\"name\":\"string\",\"price\":0.0,\"time\":1551545114788,\"version\":\"string\"}]","classMethod":"com.fw.tester.controller.BookController.createBook","httpMethod":"POST","traceId":1551545138631,"url":"http://localhost:8089/book"}
+2019-03-03 00:45:38.631 INFO  [qtp1640458320-23] c.f.t.aspect.WebLogJsonAspect [doBefore]:62 - {"args":"[{\"author\":\"string\",\"id\":0,\"name\":\"string\",\"price\":0.0,\"time\":1551545114788,\"version\":\"string\"}]","classMethod":"com.fw.tester.controller.BookController.createBook","httpMethod":"POST","traceId":1551545138631,"url":"http://localhost:8089/book"}
+2019-03-03 00:45:38.633 INFO  [qtp1640458320-23] c.f.t.aspect.WebLogJsonAspect [doBefore]:67 - Send message to kafka successfully
+2019-03-03 00:45:38.633 INFO  [qtp1640458320-23] c.f.t.aspect.WebLogJsonAspect [doBefore]:67 - Send message to kafka successfully
+2019-03-03 00:45:38.634 INFO  [qtp1640458320-23] c.f.t.aspect.WebLogJsonAspect [doAfterReturning]:81 - {"response":{"result":"result is:2"},"spendTime":3,"status":200,"traceId":1551545138631}
+2019-03-03 00:45:38.634 INFO  [qtp1640458320-23] c.f.t.aspect.WebLogJsonAspect [doAfterReturning]:81 - {"response":{"result":"result is:2"},"spendTime":3,"status":200,"traceId":1551545138631}
+2019-03-03 00:45:38.635 INFO  [qtp1640458320-23] c.f.t.aspect.WebLogJsonAspect [doAfterReturning]:85 - Send message to kafka successfully
+2019-03-03 00:45:38.635 INFO  [qtp1640458320-23] c.f.t.aspect.WebLogJsonAspect [doAfterReturning]:85 - Send message to kafka successfully
+2019-03-03 00:45:38.777 INFO  [qtp1640458320-43] c.f.t.aspect.WebLogJsonAspect [doBefore]:62 - {"args":"[{\"author\":\"string\",\"id\":0,\"name\":\"string\",\"price\":0.0,\"time\":1551545114788,\"version\":\"string\"}]","classMethod":"com.fw.tester.controller.BookController.createBook","httpMethod":"POST","traceId":1551545138777,"url":"http://localhost:8089/book"}
+2019-03-03 00:45:38.777 INFO  [qtp1640458320-43] c.f.t.aspect.WebLogJsonAspect [doBefore]:62 - {"args":"[{\"author\":\"string\",\"id\":0,\"name\":\"string\",\"price\":0.0,\"time\":1551545114788,\"version\":\"string\"}]","classMethod":"com.fw.tester.controller.BookController.createBook","httpMethod":"POST","traceId":1551545138777,"url":"http://localhost:8089/book"}
+2019-03-03 00:45:38.778 INFO  [qtp1640458320-43] c.f.t.aspect.WebLogJsonAspect [doBefore]:67 - Send message to kafka successfully
+2019-03-03 00:45:38.778 INFO  [qtp1640458320-43] c.f.t.aspect.WebLogJsonAspect [doBefore]:67 - Send message to kafka successfully
+2019-03-03 00:45:38.779 INFO  [qtp1640458320-43] c.f.t.aspect.WebLogJsonAspect [doAfterReturning]:81 - {"response":{"result":"result is:2"},"spendTime":2,"status":200,"traceId":1551545138777}
+2019-03-03 00:45:38.779 INFO  [qtp1640458320-43] c.f.t.aspect.WebLogJsonAspect [doAfterReturning]:81 - {"response":{"result":"result is:2"},"spendTime":2,"status":200,"traceId":1551545138777}
+2019-03-03 00:45:38.780 INFO  [qtp1640458320-43] c.f.t.aspect.WebLogJsonAspect [doAfterReturning]:85 - Send message to kafka successfully
+2019-03-03 00:45:38.780 INFO  [qtp1640458320-43] c.f.t.aspect.WebLogJsonAspect [doAfterReturning]:85 - Send message to kafka successfully
+2019-03-03 00:45:38.916 INFO  [qtp1640458320-23] c.f.t.aspect.WebLogJsonAspect [doBefore]:62 - {"args":"[{\"author\":\"string\",\"id\":0,\"name\":\"string\",\"price\":0.0,\"time\":1551545114788,\"version\":\"string\"}]","classMethod":"com.fw.tester.controller.BookController.createBook","httpMethod":"POST","traceId":1551545138916,"url":"http://localhost:8089/book"}
+2019-03-03 00:45:38.916 INFO  [qtp1640458320-23] c.f.t.aspect.WebLogJsonAspect [doBefore]:62 - {"args":"[{\"author\":\"string\",\"id\":0,\"name\":\"string\",\"price\":0.0,\"time\":1551545114788,\"version\":\"string\"}]","classMethod":"com.fw.tester.controller.BookController.createBook","httpMethod":"POST","traceId":1551545138916,"url":"http://localhost:8089/book"}
+2019-03-03 00:45:38.917 INFO  [qtp1640458320-23] c.f.t.aspect.WebLogJsonAspect [doBefore]:67 - Send message to kafka successfully
+2019-03-03 00:45:38.917 INFO  [qtp1640458320-23] c.f.t.aspect.WebLogJsonAspect [doBefore]:67 - Send message to kafka successfully
+2019-03-03 00:45:38.918 INFO  [qtp1640458320-23] c.f.t.aspect.WebLogJsonAspect [doAfterReturning]:81 - {"response":{"result":"result is:2"},"spendTime":1,"status":200,"traceId":1551545138916}
+2019-03-03 00:45:38.918 INFO  [qtp1640458320-23] c.f.t.aspect.WebLogJsonAspect [doAfterReturning]:81 - {"response":{"result":"result is:2"},"spendTime":1,"status":200,"traceId":1551545138916}
+2019-03-03 00:45:38.918 INFO  [qtp1640458320-23] c.f.t.aspect.WebLogJsonAspect [doAfterReturning]:85 - Send message to kafka successfully
+2019-03-03 00:45:38.918 INFO  [qtp1640458320-23] c.f.t.aspect.WebLogJsonAspect [doAfterReturning]:85 - Send message to kafka successfully
+2019-03-03 00:47:31.649 INFO  [RMI TCP Connection(12)-127.0.0.1] o.e.j.server.AbstractConnector [doStop]:332 - Stopped ServerConnector@3eb292cd{HTTP/1.1,[http/1.1]}{0.0.0.0:8089}
+2019-03-03 00:47:31.650 INFO  [RMI TCP Connection(12)-127.0.0.1] o.eclipse.jetty.server.session [stopScavenging]:167 - node0 Stopped scavenging
+2019-03-03 00:47:31.651 INFO  [RMI TCP Connection(12)-127.0.0.1] o.e.j.s.h.C.application [log]:2221 - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2019-03-03 00:47:31.652 INFO  [RMI TCP Connection(12)-127.0.0.1] o.e.j.s.handler.ContextHandler [doStop]:957 - Stopped o.s.b.w.e.j.JettyEmbeddedWebAppContext@128c502c{/,[file:///C:/Users/jingt/AppData/Local/Temp/jetty-docbase.9197811005300330301.8089/, jar:file:/C:/software/repo/io/springfox/springfox-swagger-ui/2.7.0/springfox-swagger-ui-2.7.0.jar!/META-INF/resources],UNAVAILABLE}

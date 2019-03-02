@@ -34,11 +34,12 @@ import java.util.Arrays;
 /**
  * Aspect for http log
  */
+
 @Aspect
 @Order(5)
-//@Component
+@Component
 @Slf4j
-public class WebLogAspect {
+public class WebLogJsonAspect {
 	
 	 @Autowired
 	 private KafkaTemplate kafkaTemplate;
@@ -57,7 +58,7 @@ public class WebLogAspect {
         ServletRequestAttributes attributes = (ServletRequestAttributes) RequestContextHolder.getRequestAttributes();
         HttpServletRequest request = attributes.getRequest();
         LogRequest logRequest = new LogRequest(System.currentTimeMillis(), request.getRequestURL().toString(), request.getMethod(),
-        		joinPoint.getSignature().getDeclaringTypeName() + "." + joinPoint.getSignature().getName(), joinPoint.getArgs());
+        		joinPoint.getSignature().getDeclaringTypeName() + "." + joinPoint.getSignature().getName(), JSON.toJSONString(joinPoint.getArgs()));
         log.info(JSON.toJSONString(logRequest));
         
         if(kafkaEnable) {
@@ -112,7 +113,7 @@ public class WebLogAspect {
     	private String url;
     	private String httpMethod;
     	private String classMethod;
-    	private Object[] args;
+    	private String args;
     }
     
     @Data
